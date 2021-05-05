@@ -7,6 +7,7 @@ class ChatroomController < ApplicationController
   private
 
   def set_messages
+    @message = Message.new
     @messages = Message.all
   end
 end
